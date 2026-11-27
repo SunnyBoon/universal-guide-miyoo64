@@ -1,0 +1,737 @@
+{
+  "rom_size": 67108864,
+  "rom_sha1": "2111d39265a317414d359e35a7d971c4dfa5f9e1",
+  "assets": [
+    {
+      "asset_id": "badge/AllorNothing",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2043552,
+      "palette_offset": 2044064,
+      "width": 32,
+      "height": 32,
+      "output": "private/AllorNothing.bmp",
+      "sha256": "9103a125caed9bfc9b0a40554ff66e6d6a698ac14bff0e0fb73367bdfa3a0a6b"
+    },
+    {
+      "asset_id": "badge/AttackFXA",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2042976,
+      "palette_offset": 2043488,
+      "width": 32,
+      "height": 32,
+      "output": "private/AttackFXA.bmp",
+      "sha256": "a7351e507b3b8fe3ab795e590421d12b08bf813cf29e127961bd26e7d355a751"
+    },
+    {
+      "asset_id": "badge/AttackFXB",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2079840,
+      "palette_offset": 2080352,
+      "width": 32,
+      "height": 32,
+      "output": "private/AttackFXB.bmp",
+      "sha256": "3c508a71f9e405bb94d10a80023929673cd483309b7cce9fc7f42092fdcc248e"
+    },
+    {
+      "asset_id": "badge/AttackFXC",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2080992,
+      "palette_offset": 2081504,
+      "width": 32,
+      "height": 32,
+      "output": "private/AttackFXC.bmp",
+      "sha256": "4fe435672a330edbac6748b9d50af453e8e5086167ea51ae2756c4b3789f5cf3"
+    },
+    {
+      "asset_id": "badge/AttackFXD",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2079264,
+      "palette_offset": 2079776,
+      "width": 32,
+      "height": 32,
+      "output": "private/AttackFXD.bmp",
+      "sha256": "28ff20b190f1ae4b85ed5d77387d8416551f2aaf937886bb20b525728e092d65"
+    },
+    {
+      "asset_id": "badge/AttackFXE",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2080416,
+      "palette_offset": 2080928,
+      "width": 32,
+      "height": 32,
+      "output": "private/AttackFXE.bmp",
+      "sha256": "ddb41e5d20cb5528febdadd32ac1101f8ea7ec767a41fde90f8dc098b3047791"
+    },
+    {
+      "asset_id": "badge/BumpAttack",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2059680,
+      "palette_offset": 2060192,
+      "width": 32,
+      "height": 32,
+      "output": "private/BumpAttack.bmp",
+      "sha256": "15068b28dd5e877ba4576314dcfd3145116376837649c2df093f3f70dae50149"
+    },
+    {
+      "asset_id": "badge/ChillOut",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2049312,
+      "palette_offset": 2049824,
+      "width": 32,
+      "height": 32,
+      "output": "private/ChillOut.bmp",
+      "sha256": "48259134ae59309a149474e0f2ce5ca0cc0b495616c86f94f5fa98e97bdbf097"
+    },
+    {
+      "asset_id": "badge/CloseCall",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2066016,
+      "palette_offset": 2066528,
+      "width": 32,
+      "height": 32,
+      "output": "private/CloseCall.bmp",
+      "sha256": "07e9bf502416af7c42662a96bf5c55b2225a2599909aa9449d17e98607e55ce8"
+    },
+    {
+      "asset_id": "badge/DDownJump",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2070048,
+      "palette_offset": 2070560,
+      "width": 32,
+      "height": 32,
+      "output": "private/DDownJump.bmp",
+      "sha256": "f0e720c5809d77e81b777c25c2c9b69bbd18d9f742a839b88c4d9da7f1073482"
+    },
+    {
+      "asset_id": "badge/DDownPound",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2038944,
+      "palette_offset": 2039456,
+      "width": 32,
+      "height": 32,
+      "output": "private/DDownPound.bmp",
+      "sha256": "1ed33bce45e4db4bc5f8165fcdcdd54008368ca630ec8728004432832209b36d"
+    },
+    {
+      "asset_id": "badge/DamageDodge",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2070624,
+      "palette_offset": 2071136,
+      "width": 32,
+      "height": 32,
+      "output": "private/DamageDodge.bmp",
+      "sha256": "c43babc96a3ae148e6c4585e3b5ca3193049113b40cd221c0108a020946f1f51"
+    },
+    {
+      "asset_id": "badge/DeepFocus",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2073504,
+      "palette_offset": 2074016,
+      "width": 32,
+      "height": 32,
+      "output": "private/DeepFocus.bmp",
+      "sha256": "37d403bb8fceabc1037ebc9b8945bda4ef503a19cc709714f1b579c5119a04f5"
+    },
+    {
+      "asset_id": "badge/DefendPlus",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2047584,
+      "palette_offset": 2048096,
+      "width": 32,
+      "height": 32,
+      "output": "private/DefendPlus.bmp",
+      "sha256": "8c3fcc761a27a63933c524f2cf9530cfa42e4a669ef2080e3312411b0e7e25d3"
+    },
+    {
+      "asset_id": "badge/DizzyAttack",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2062560,
+      "palette_offset": 2063072,
+      "width": 32,
+      "height": 32,
+      "output": "private/DizzyAttack.bmp",
+      "sha256": "aabf742c979f545fa0c992b6c030401de997b14e68d40fea030b9dfdb5ab6fe9"
+    },
+    {
+      "asset_id": "badge/DizzyStomp",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2040096,
+      "palette_offset": 2040608,
+      "width": 32,
+      "height": 32,
+      "output": "private/DizzyStomp.bmp",
+      "sha256": "859ba714c6fb819c901298f8e55379b40e9bcb53a3f889670eb6a26281e0ba63"
+    },
+    {
+      "asset_id": "badge/DodgeMaster",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2029152,
+      "palette_offset": 2029664,
+      "width": 32,
+      "height": 32,
+      "output": "private/DodgeMaster.bmp",
+      "sha256": "106833cbe41b3decfbab9b6b2372c2539fd544e93f6462379a583d95b65ad532"
+    },
+    {
+      "asset_id": "badge/DoubleDip",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2032608,
+      "palette_offset": 2033120,
+      "width": 32,
+      "height": 32,
+      "output": "private/DoubleDip.bmp",
+      "sha256": "9b751290d6bcf8a17f4f15cb8f2085dc8c516edfc938b7f152bf42f89124ffab"
+    },
+    {
+      "asset_id": "badge/FPPlus",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2045856,
+      "palette_offset": 2046368,
+      "width": 32,
+      "height": 32,
+      "output": "private/FPPlus.bmp",
+      "sha256": "94d8db5ceb59cac91225cccf75d615eb8718b41415c734a175517bd7543abe42"
+    },
+    {
+      "asset_id": "badge/FeelingFine",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2042400,
+      "palette_offset": 2042912,
+      "width": 32,
+      "height": 32,
+      "output": "private/FeelingFine.bmp",
+      "sha256": "b98e20c8fc62618bd5e6a7bd238f55905e667b72c73c256e8665964b35668112"
+    },
+    {
+      "asset_id": "badge/FireShield",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2036640,
+      "palette_offset": 2037152,
+      "width": 32,
+      "height": 32,
+      "output": "private/FireShield.bmp",
+      "sha256": "b91cba38199c1d8fb183bd94342dc4a852290b86fd6b6373d92845b74b24fbfd"
+    },
+    {
+      "asset_id": "badge/FirstAttack",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2030880,
+      "palette_offset": 2031392,
+      "width": 32,
+      "height": 32,
+      "output": "private/FirstAttack.bmp",
+      "sha256": "0f294ba361407a999e6823bb8441af32d6a3acb86fe042889063f06388597357"
+    },
+    {
+      "asset_id": "badge/FlowerFinder",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2061984,
+      "palette_offset": 2062496,
+      "width": 32,
+      "height": 32,
+      "output": "private/FlowerFinder.bmp",
+      "sha256": "0152127c6806befd2578b72ed14e712c2f3b7388381fec89de61aeb6172c080a"
+    },
+    {
+      "asset_id": "badge/FlowerSaver",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2053344,
+      "palette_offset": 2053856,
+      "width": 32,
+      "height": 32,
+      "output": "private/FlowerSaver.bmp",
+      "sha256": "4c3f3b34c467fc1128c5e1bf2c9d9c89919ed80228d8a69ffbdbd76e096d16e0"
+    },
+    {
+      "asset_id": "badge/GroupFocus",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2078688,
+      "palette_offset": 2079200,
+      "width": 32,
+      "height": 32,
+      "output": "private/GroupFocus.bmp",
+      "sha256": "bb2ba3980f568e893909ea6801bdf5160ff344f4c60489ad30b8100df883a161"
+    },
+    {
+      "asset_id": "badge/HPDrain",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2044128,
+      "palette_offset": 2044640,
+      "width": 32,
+      "height": 32,
+      "output": "private/HPDrain.bmp",
+      "sha256": "bf21ec9b3852a70e3e28d58191eb84d42e12bdbfb8029a4103f779d473e9bfdc"
+    },
+    {
+      "asset_id": "badge/HPPlus",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2031456,
+      "palette_offset": 2031968,
+      "width": 32,
+      "height": 32,
+      "output": "private/HPPlus.bmp",
+      "sha256": "f9a28bfc1fe10b39ee350ee5a44ff334f4b061494e871035538a942611ea0968"
+    },
+    {
+      "asset_id": "badge/HammerThrow",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2040672,
+      "palette_offset": 2041184,
+      "width": 32,
+      "height": 32,
+      "output": "private/HammerThrow.bmp",
+      "sha256": "35ff05ccaec6a8260478917026e91ff20fde923366734578f7937138c0d45042"
+    },
+    {
+      "asset_id": "badge/HappyFlower",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2071776,
+      "palette_offset": 2072288,
+      "width": 32,
+      "height": 32,
+      "output": "private/HappyFlower.bmp",
+      "sha256": "ead5312dfd472196410879e4a090e694390c2fd0bed12587dfa0217abe5cbb7b"
+    },
+    {
+      "asset_id": "badge/HappyHeart",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2049888,
+      "palette_offset": 2050400,
+      "width": 32,
+      "height": 32,
+      "output": "private/HappyHeart.bmp",
+      "sha256": "c11b051a9552baa209977088fd1298b0fce14152dca33b6df3d43eb4eec358b1"
+    },
+    {
+      "asset_id": "badge/HeartFinder",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2061408,
+      "palette_offset": 2061920,
+      "width": 32,
+      "height": 32,
+      "output": "private/HeartFinder.bmp",
+      "sha256": "5a5298d9020df24fa83cd29ae798739c70c1a27ecfa5216a93cfa5b786f6be61"
+    },
+    {
+      "asset_id": "badge/ISpy",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2064288,
+      "palette_offset": 2064800,
+      "width": 32,
+      "height": 32,
+      "output": "private/ISpy.bmp",
+      "sha256": "888d36827de161f5074bd4888a558aefef9fa9a6b7c4f2e86327690a9d17b404"
+    },
+    {
+      "asset_id": "badge/IcePower",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2047008,
+      "palette_offset": 2047520,
+      "width": 32,
+      "height": 32,
+      "output": "private/IcePower.bmp",
+      "sha256": "cbde016798a275c0e1f5da76809739fde07b3fff4e1a1071b274eb41d69bb241"
+    },
+    {
+      "asset_id": "badge/JumpCharge",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2037216,
+      "palette_offset": 2037728,
+      "width": 32,
+      "height": 32,
+      "output": "private/JumpCharge.bmp",
+      "sha256": "dd99d71162b86cbfb16aa73cedfc210e0707b31db03aadc949ac7e99e357f33b"
+    },
+    {
+      "asset_id": "badge/LastStand",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2065440,
+      "palette_offset": 2065952,
+      "width": 32,
+      "height": 32,
+      "output": "private/LastStand.bmp",
+      "sha256": "a3a4bae844a994058b63808f45b24088ce2ff92aaeb0179f0bfb5e6c5a034ab2"
+    },
+    {
+      "asset_id": "badge/LuckyDay",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2058528,
+      "palette_offset": 2059040,
+      "width": 32,
+      "height": 32,
+      "output": "private/LuckyDay.bmp",
+      "sha256": "1258eb624928f5ce8de17f1eca2b08b3a627ae83909aaf5ee24fe3b5c0e09a93"
+    },
+    {
+      "asset_id": "badge/MegaJump",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2056224,
+      "palette_offset": 2056736,
+      "width": 32,
+      "height": 32,
+      "output": "private/MegaJump.bmp",
+      "sha256": "c9a6ecfe747b0170cf9239454ce8b241dea95e599804c5200d58da21cdb1211b"
+    },
+    {
+      "asset_id": "badge/MegaQuake",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2033760,
+      "palette_offset": 2034272,
+      "width": 32,
+      "height": 32,
+      "output": "private/MegaQuake.bmp",
+      "sha256": "2d921c40cd84ec06d064341d08b605f8fcfd3b60b0afbbf8be571eb298b69aa0"
+    },
+    {
+      "asset_id": "badge/MegaRush",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2046432,
+      "palette_offset": 2046944,
+      "width": 32,
+      "height": 32,
+      "output": "private/MegaRush.bmp",
+      "sha256": "856890c2ecb879914651d73fbe958f9a0c7a07863e0368769461e4546157350e"
+    },
+    {
+      "asset_id": "badge/MegaSmash",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2057952,
+      "palette_offset": 2058464,
+      "width": 32,
+      "height": 32,
+      "output": "private/MegaSmash.bmp",
+      "sha256": "821c43ede3b0f657f9e7261fffaa24debec8821166558383240b20d53d1cef2b"
+    },
+    {
+      "asset_id": "badge/MoneyMoney",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2048736,
+      "palette_offset": 2049248,
+      "width": 32,
+      "height": 32,
+      "output": "private/MoneyMoney.bmp",
+      "sha256": "0a1cb09f2025dab1f5196d3d934a73b231099e1e05b17ec6aa98185d046a5db9"
+    },
+    {
+      "asset_id": "badge/Multibounce",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2028000,
+      "palette_offset": 2028512,
+      "width": 32,
+      "height": 32,
+      "output": "private/Multibounce.bmp",
+      "sha256": "7e68108fab4701f795a0f623b2974a183cc0244055fe421d0aed8d85df63d2be"
+    },
+    {
+      "asset_id": "badge/PDownDUp",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2060832,
+      "palette_offset": 2061344,
+      "width": 32,
+      "height": 32,
+      "output": "private/PDownDUp.bmp",
+      "sha256": "ed63783de519348f80312ac7da5fa6e759aa027e5cbffc3caa9a41023a3feb82"
+    },
+    {
+      "asset_id": "badge/PUpDDown",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2060256,
+      "palette_offset": 2060768,
+      "width": 32,
+      "height": 32,
+      "output": "private/PUpDDown.bmp",
+      "sha256": "a9a4b36c7a6f223ed0975c6ccbc9ad6b0a62e82c1ffa35b559162fd5f80a057a"
+    },
+    {
+      "asset_id": "badge/PayOff",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2048160,
+      "palette_offset": 2048672,
+      "width": 32,
+      "height": 32,
+      "output": "private/PayOff.bmp",
+      "sha256": "a18454a12e6c125f6ed995d6bada533a9b7146d898aa5229f3e7b24ca8823967"
+    },
+    {
+      "asset_id": "badge/Peekaboo",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2078112,
+      "palette_offset": 2078624,
+      "width": 32,
+      "height": 32,
+      "output": "private/Peekaboo.bmp",
+      "sha256": "934a1e2c5d41b8611d336500d1a53020eb13c63fd576ce4e264cec4edc04d8e1"
+    },
+    {
+      "asset_id": "badge/PowerBounce",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2029728,
+      "palette_offset": 2030240,
+      "width": 32,
+      "height": 32,
+      "output": "private/PowerBounce.bmp",
+      "sha256": "ec6fafb8c509abe675967d81f23b2729c5cc3fcdc51404cfba0ae90b69182687"
+    },
+    {
+      "asset_id": "badge/PowerJump",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2055072,
+      "palette_offset": 2055584,
+      "width": 32,
+      "height": 32,
+      "output": "private/PowerJump.bmp",
+      "sha256": "e064c9d6e59420b3bfa71e5c4adbe9869e355dc178e43e7ae1021795bbb5fb33"
+    },
+    {
+      "asset_id": "badge/PowerPlus",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2028576,
+      "palette_offset": 2029088,
+      "width": 32,
+      "height": 32,
+      "output": "private/PowerPlus.bmp",
+      "sha256": "91a712575d910e683a6c4b5adffd6d48cd8430589bf7d566d8967e6dad24d12e"
+    },
+    {
+      "asset_id": "badge/PowerQuake",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2033184,
+      "palette_offset": 2033696,
+      "width": 32,
+      "height": 32,
+      "output": "private/PowerQuake.bmp",
+      "sha256": "3921d677df104df9015434f8e69b50c363013342867c1dfd1f3bcfdd7ff7b16d"
+    },
+    {
+      "asset_id": "badge/PowerRush",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2064864,
+      "palette_offset": 2065376,
+      "width": 32,
+      "height": 32,
+      "output": "private/PowerRush.bmp",
+      "sha256": "b48942d1dcaae1893abd25bb411c6a6d49c2aa8a2ec7458292790affef99e55c"
+    },
+    {
+      "asset_id": "badge/PowerSmash",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2056800,
+      "palette_offset": 2057312,
+      "width": 32,
+      "height": 32,
+      "output": "private/PowerSmash.bmp",
+      "sha256": "3ccd1d6be3e9b307d0b6151f1f52310a7e32209a9cba2f3a322a1f13a8fb10d9"
+    },
+    {
+      "asset_id": "badge/PrettyLucky",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2041824,
+      "palette_offset": 2042336,
+      "width": 32,
+      "height": 32,
+      "output": "private/PrettyLucky.bmp",
+      "sha256": "11ef094f8d2c12c7efe426727ed170a9e4165db6b238b4b8c057dc68d3905c81"
+    },
+    {
+      "asset_id": "badge/QuakeHammer",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2032032,
+      "palette_offset": 2032544,
+      "width": 32,
+      "height": 32,
+      "output": "private/QuakeHammer.bmp",
+      "sha256": "39d0caf3e7bf09535d0e798b99cd4f7f8cb3a36bb4d058652f67681d21c1d223"
+    },
+    {
+      "asset_id": "badge/QuickChange",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2075232,
+      "palette_offset": 2075744,
+      "width": 32,
+      "height": 32,
+      "output": "private/QuickChange.bmp",
+      "sha256": "668437c621dbf83b9a82d529a9a9a4145a5096c40181e6f2e6a035df480107b0"
+    },
+    {
+      "asset_id": "badge/Refund",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2052768,
+      "palette_offset": 2053280,
+      "width": 32,
+      "height": 32,
+      "output": "private/Refund.bmp",
+      "sha256": "7d1eb7143f63c25817dd8f0a95a8a2d10ab7cc0ea8ee1516a2c1ea1c51630441"
+    },
+    {
+      "asset_id": "badge/RunawayPay",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2052192,
+      "palette_offset": 2052704,
+      "width": 32,
+      "height": 32,
+      "output": "private/RunawayPay.bmp",
+      "sha256": "cea886d880dd58cfa0f73ffa610b043fd60122c266d0ec9406c452c4b29e130a"
+    },
+    {
+      "asset_id": "badge/SJumpChg",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2037792,
+      "palette_offset": 2038304,
+      "width": 32,
+      "height": 32,
+      "output": "private/SJumpChg.bmp",
+      "sha256": "be23f37319a084460f5937b1b678f03fdb22dc3379e71f925a370d49e68edb57"
+    },
+    {
+      "asset_id": "badge/SSmashChg",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2035488,
+      "palette_offset": 2036000,
+      "width": 32,
+      "height": 32,
+      "output": "private/SSmashChg.bmp",
+      "sha256": "33872eb1fcccf4e3b977e00bd7fb738dac83f11dcce8bccc6af0ba9c5b055f40"
+    },
+    {
+      "asset_id": "badge/ShrinkStomp",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2069472,
+      "palette_offset": 2069984,
+      "width": 32,
+      "height": 32,
+      "output": "private/ShrinkStomp.bmp",
+      "sha256": "8830931733f67913337efa1e70b08a38991faca21c8edc0680bd76b0b44606dd"
+    },
+    {
+      "asset_id": "badge/SleepStomp",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2034336,
+      "palette_offset": 2034848,
+      "width": 32,
+      "height": 32,
+      "output": "private/SleepStomp.bmp",
+      "sha256": "36d86d6233e4918cc67a74b4abd9be37378170179c32865c232da88f16769025"
+    },
+    {
+      "asset_id": "badge/SlowGo",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2045280,
+      "palette_offset": 2045792,
+      "width": 32,
+      "height": 32,
+      "output": "private/SlowGo.bmp",
+      "sha256": "9144ad70981ae3c79e6365e666e23404cf84aaba558481f9aad850304d617dfe"
+    },
+    {
+      "asset_id": "badge/SmashCharge",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2034912,
+      "palette_offset": 2035424,
+      "width": 32,
+      "height": 32,
+      "output": "private/SmashCharge.bmp",
+      "sha256": "7a83fda27cd56a5e361847523b53372c112c9cbbe90feba065ac55e33eec8b4e"
+    },
+    {
+      "asset_id": "badge/SpeedySpin",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2063136,
+      "palette_offset": 2063648,
+      "width": 32,
+      "height": 32,
+      "output": "private/SpeedySpin.bmp",
+      "sha256": "9f995921f18f123fbac64b0790acab12aa70c0f54cb7f24579f8cec01f53829a"
+    },
+    {
+      "asset_id": "badge/SpikeShield",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2030304,
+      "palette_offset": 2030816,
+      "width": 32,
+      "height": 32,
+      "output": "private/SpikeShield.bmp",
+      "sha256": "67312932007b91c7a865c039c5b27b225b852eea192b3cca360991632845eed5"
+    },
+    {
+      "asset_id": "badge/SpinAttack",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2063712,
+      "palette_offset": 2064224,
+      "width": 32,
+      "height": 32,
+      "output": "private/SpinAttack.bmp",
+      "sha256": "97e29c705d2eea6a0aa52208264538768cbf414c1b6bdecc36c93566ab7e5bf6"
+    },
+    {
+      "asset_id": "badge/SpinSmash",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2027424,
+      "palette_offset": 2027936,
+      "width": 32,
+      "height": 32,
+      "output": "private/SpinSmash.bmp",
+      "sha256": "ef0e83d83a5835016fe27243cf3d763e8aef70d641b480e057fb2bdebc338665"
+    },
+    {
+      "asset_id": "badge/SuperFocus",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2074080,
+      "palette_offset": 2074592,
+      "width": 32,
+      "height": 32,
+      "output": "private/SuperFocus.bmp",
+      "sha256": "3cae12816acf9f6a3b3311fc9a0da76129c45f11088b43a559718d47d0709384"
+    },
+    {
+      "asset_id": "badge/TripleDip",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2053920,
+      "palette_offset": 2054432,
+      "width": 32,
+      "height": 32,
+      "output": "private/TripleDip.bmp",
+      "sha256": "ef6c304b4df4972fa4f781ddcdbb5108c2bd3ea04493b5e988da3b429129baa2"
+    },
+    {
+      "asset_id": "badge/ZapTap",
+      "method": "pal-ci4-rgba16-nearest3-bmp24",
+      "raster_offset": 2050464,
+      "palette_offset": 2050976,
+      "width": 32,
+      "height": 32,
+      "output": "private/ZapTap.bmp",
+      "sha256": "064c3adc6a79e49c3ed1bc57033cab0fb53c1fdf8e4bc3a3678799f4a08a2e0c"
+    },
+    {
+      "asset_id": "anim/star_piece_0",
+      "method": "pal-ci4-rgba16-nearest3-bmp24-zero-dpi",
+      "raster_offset": 2139616,
+      "palette_offset": 2140128,
+      "width": 32,
+      "height": 32,
+      "output": "S1.bmp",
+      "sha256": "d3376bbb25f984e6f59430a3bfe4eeef0dde1bb07efbf05d6a18c8177ea1cdbd"
+    },
+    {
+      "asset_id": "entity/SuperBlock",
+      "method": "pal-superblock-orthographic-bmp24",
+      "raster_offset": 15408272,
+      "palette_offset": 15408528,
+      "width": 200,
+      "height": 130,
+      "output": "private/SuperBlock.bmp",
+      "sha256": "df9265e346799f22d785a49e83af7cdc0137713aa5317f182fd849b1eb2551cc",
+      "vertex_offset": 15407120,
+      "sprite_offset": 15431344,
+      "sprite_palette_offset": 15431856,
+      "display_offsets": [
+        15409240,
+        15409168,
+        15409096,
+        15409024,
+        15408952,
+        15408792
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "format_version": 1,
+  "packages": [
+    {
+      "id": "paper-mario-pal-standard",
+      "name": "Paper Mario PAL – Standardguide",
+      "port": "paper-mario-pal",
+      "version": "0.1.0",
+      "package_format": 1,
+      "url": "https://github.com/SunnyBoon/universal-guide-miyoo64/releases/download/v0.1.0/paper-mario-pal-standard-0.1.0.zip",
+      "size": 72887,
+      "sha256": "af0960f557909808c791a3e095c23a0cc126b79b7525dd4ed788749f3aeacd5e",
+      "availability": "planned",
+      "optional_converter": "paper-mario-pal-converter"
+    }
+  ],
+  "tools": [
+    {
+      "id": "paper-mario-pal-converter",
+      "name": "Paper Mario PAL ROM image converter",
+      "port": "paper-mario-pal",
+      "version": "0.1.0",
+      "protocol": "paper-mario-pal-v1",
+      "compatible_package_format": 1,
+      "recipe_sha256": "813c55f8d96dbfd1af0d69f7f0f7e933126bbe12f344bca834cd1464b90e7715",
+      "binary_sha256": "9381a62521cfe46a76d4597a8b4e8637de2c67278aaa2ac2887475e4106fcabb",
+      "url": "https://github.com/SunnyBoon/universal-guide-miyoo64/releases/download/v0.1.0/paper-mario-pal-converter-0.1.0-arm32.zip",
+      "size": 15701,
+      "sha256": "472681835d5bb64fd0d2751fc0476d4b98a376dd2e351af9d37ab88dd0ba8d1e",
+      "availability": "planned"
+    }
+  ]
+}
