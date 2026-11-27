@@ -3,26 +3,39 @@
 from pathlib import Path, PurePosixPath
 from zipfile import ZipFile, BadZipFile
 from urllib.parse import urlsplit, unquote
-from urllib.request import urlopen
+from urllib.request import Request, build_opener, HTTPRedirectHandler
 import argparse, fcntl, hashlib, json, os, re, shutil, stat, subprocess, sys, tempfile
+from http.client import HTTPException
 from build_package import FILES
 ROOT=Path(__file__).resolve().parents[1]
 MAX_ARCHIVE=4*1024*1024
 MAX_CONTENT=2*1024*1024
+MAX_CATALOG=256*1024
 
-def fetch(url, local_test):
+class HTTPSRedirect(HTTPRedirectHandler):
+    def redirect_request(self, req, fp, code, msg, headers, newurl):
+        target=urlsplit(newurl)
+        if target.scheme!='https' or not target.netloc or target.username or target.password:
+            raise ValueError('redirect must remain on HTTPS without credentials')
+        return super().redirect_request(req,fp,code,msg,headers,newurl)
+
+def fetch(url, local_test, limit=MAX_ARCHIVE):
     u=urlsplit(url)
     if u.scheme=='file' and local_test and u.netloc in ('','localhost'):
         p=Path(unquote(u.path)).resolve(strict=True)
         if not p.is_relative_to(Path(tempfile.gettempdir()).resolve()) or not p.is_file(): raise ValueError('local test URL must point under temp')
         f=p.open('rb')
     elif u.scheme=='https' and u.netloc and not u.username and not u.password:
-        f=urlopen(url,timeout=30)
-        if urlsplit(f.geturl()).scheme!='https': f.close(); raise ValueError('HTTPS redirect required')
+        f=build_opener(HTTPSRedirect()).open(Request(url,headers={'User-Agent':'universal-guide-host/1'}),timeout=30)
+        final=urlsplit(f.geturl())
+        if final.scheme!='https' or not final.netloc or final.username or final.password: f.close(); raise ValueError('HTTPS redirect required')
     else: raise ValueError('URL must be HTTPS (file URLs require --local-test)')
     with f:
-        data=f.read(MAX_ARCHIVE+1)
-    if len(data)>MAX_ARCHIVE: raise ValueError('archive exceeds limit')
+        declared=f.headers.get('Content-Length') if hasattr(f,'headers') else None
+        if declared is not None and (not declared.isdigit() or int(declared)>limit): raise ValueError('invalid or excessive Content-Length')
+        data=f.read(limit+1)
+    if len(data)>limit: raise ValueError('download exceeds limit')
+    if declared is not None and len(data)!=int(declared): raise ValueError('incomplete download')
     return data
 
 def checked_files(archive):
@@ -39,7 +52,12 @@ def checked_files(archive):
     return result
 
 def install(catalog, package_id, root, local_test=False, override=None):
-    cat=json.loads(Path(catalog).read_text(encoding='utf8'))
+    catalog_url=urlsplit(str(catalog))
+    if catalog_url.scheme=='https':
+        cat=json.loads(fetch(str(catalog),False,MAX_CATALOG).decode('utf8'))
+    elif not catalog_url.scheme:
+        cat=json.loads(Path(catalog).read_text(encoding='utf8'))
+    else: raise ValueError('catalog must be a local path or HTTPS URL')
     if cat.get('format_version')!=1 or not isinstance(cat.get('packages'),list): raise ValueError('unsupported catalog')
     matches=[x for x in cat['packages'] if x.get('id')==package_id]
     if len(matches)!=1: raise ValueError('catalog ID absent or duplicated')
@@ -97,5 +115,5 @@ if __name__=='__main__':
     try:
         if a.test_url and not a.local_test: raise ValueError('test URL requires --local-test')
         install(a.catalog,a.package,a.root,a.local_test,a.test_url)
-    except (OSError,ValueError,KeyError,TypeError,RuntimeError,BadZipFile,subprocess.CalledProcessError) as exc:
+    except (OSError,ValueError,KeyError,TypeError,RuntimeError,HTTPException,BadZipFile,subprocess.CalledProcessError) as exc:
         print('Installation failed:',exc,file=sys.stderr);sys.exit(1)

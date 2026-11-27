@@ -10,7 +10,7 @@
       "url": "https://github.com/SunnyBoon/universal-guide-miyoo64/releases/download/v0.1.0/paper-mario-pal-standard-0.1.0.zip",
       "size": 72887,
       "sha256": "af0960f557909808c791a3e095c23a0cc126b79b7525dd4ed788749f3aeacd5e",
-      "availability": "planned",
+      "availability": "available",
       "optional_converter": "paper-mario-pal-converter"
     }
   ],
@@ -27,7 +27,7 @@
       "url": "https://github.com/SunnyBoon/universal-guide-miyoo64/releases/download/v0.1.0/paper-mario-pal-converter-0.1.0-arm32.zip",
       "size": 15701,
       "sha256": "472681835d5bb64fd0d2751fc0476d4b98a376dd2e351af9d37ab88dd0ba8d1e",
-      "availability": "planned"
+      "availability": "available"
     }
   ]
 }

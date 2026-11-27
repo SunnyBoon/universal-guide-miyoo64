@@ -4,6 +4,8 @@ from pathlib import Path
 from zipfile import ZipFile, ZIP_DEFLATED, BadZipFile
 import copy, hashlib, json, tempfile, unittest, struct, subprocess
 from unittest import mock
+from urllib.request import Request
+from urllib.error import HTTPError
 from build_package import build
 from install_host import install, checked_files
 
@@ -36,6 +38,50 @@ class DistributionTest(unittest.TestCase):
             with self.assertRaises(OSError):self.apply()
         self.assertEqual((dest/'guide.tsv').read_bytes(),before);self.assertEqual(len(calls),3)
         self.assertEqual(self.progress.read_bytes(),b'manual progress')
+    def test_truncated_download_preserves_existing_package(self):
+        self.apply();dest=self.target/'standard';before=(dest/'guide.tsv').read_bytes()
+        self.zip.write_bytes(self.zip.read_bytes()[:-1])
+        with self.assertRaises(ValueError):self.apply()
+        self.assertEqual((dest/'guide.tsv').read_bytes(),before)
+        self.assertEqual(self.progress.read_bytes(),b'manual progress')
+        self.assertEqual(self.settings.read_bytes(),b'filter settings')
+
+    def test_https_catalog_read_and_http_catalog_rejected(self):
+        import install_host
+        catalog_url='https://example.test/catalog.json'
+        real_fetch=install_host.fetch
+        def fake_fetch(url,local_test,limit=install_host.MAX_ARCHIVE):
+            if url==catalog_url:
+                self.assertFalse(local_test);self.assertEqual(limit,install_host.MAX_CATALOG)
+                return json.dumps(self.c).encode()
+            return real_fetch(url,local_test,limit)
+        with mock.patch.object(install_host,'fetch',side_effect=fake_fetch):
+            install(catalog_url,'paper-mario-pal-standard',self.target,True,self.zip.as_uri())
+        with self.assertRaises(ValueError):install('http://example.test/catalog.json','paper-mario-pal-standard',self.target)
+
+    def test_https_errors_and_redirect_downgrade(self):
+        import install_host
+        with self.assertRaises(ValueError):
+            install_host.HTTPSRedirect().redirect_request(Request('https://example.test/a'),None,302,'redirect',{},'http://example.test/b')
+        opener=mock.Mock()
+        opener.open.side_effect=HTTPError('https://example.test/a',404,'not found',{},None)
+        with mock.patch.object(install_host,'build_opener',return_value=opener):
+            with self.assertRaises(HTTPError):install_host.fetch('https://example.test/a',False)
+        request=opener.open.call_args.args[0]
+        self.assertNotIn('authorization',{k.lower() for k,v in request.header_items()})
+        self.assertNotIn('cookie',{k.lower() for k,v in request.header_items()})
+
+    def test_incomplete_https_response_is_rejected(self):
+        import install_host
+        response=mock.MagicMock()
+        response.geturl.return_value='https://example.test/a'
+        response.__enter__.return_value=response
+        response.headers={'Content-Length':'100'}
+        response.read.return_value=b'short'
+        opener=mock.Mock();opener.open.return_value=response
+        with mock.patch.object(install_host,'build_opener',return_value=opener):
+            with self.assertRaises(ValueError):install_host.fetch('https://example.test/a',False)
+
     def test_archive_traversal_rejected_after_valid_hash(self):
         self.apply();dest=self.target/'standard';before=(dest/'guide.tsv').read_bytes()
         with ZipFile(self.zip,'a',ZIP_DEFLATED) as z:z.writestr('../escape',b'bad')
